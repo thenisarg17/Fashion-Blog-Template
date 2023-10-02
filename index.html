@@ -35,7 +35,7 @@ a {
 a:hover {
     color: #ff6f61;
 }
-
+  
 /* Header Styles */
 header {
     background: #f8f9fa;
@@ -85,7 +85,35 @@ footer {
     animation: fade-up 0.5s ease forwards;
 }
 
-@keyframes fade-up {
+/* Button Styles */
+.w3-button {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.w3-button:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Animation */
+.w3-card {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.w3-card:hover {
+    transform: scale(1);
+}
+
+/* Model Animation */
+.w3-modal-content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: modal-fade 0.5s ease forwards;
+}
+
+@keyframes modal-fade {
+
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -94,6 +122,19 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+  
+@keyframes fade-up {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
   
 </style>
