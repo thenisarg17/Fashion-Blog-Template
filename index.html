@@ -35,6 +35,55 @@ a {
 a:hover {
     color: #ff6f61;
 }
+  
+/* Header Styles */
+header {
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Parallax Effect for Image Header */
+.w3-wide {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+  
+/* Blog Entries Styles */
+.w3-container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.w3-container:hover {
+    background-color: #f5f5f5;
+}
+
+/* Blog Entries Animation */
+.w3-container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-up 0.5s ease forwards;
+}
 
 /* Button Styles */
 .w3-button {
@@ -64,6 +113,19 @@ a:hover {
 }
 
 @keyframes modal-fade {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+@keyframes fade-up {
+
     from {
         opacity: 0;
         transform: translateY(20px);
