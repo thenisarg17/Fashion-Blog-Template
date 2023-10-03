@@ -188,7 +188,8 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maxime. Fashion good so amet nisl, agittis lorem. Curabitur eget quam enim. </p>
           <p>More text about this blog entry. Fashion ipsum dolor sit amet, consectetur adipiscing elit. Sed non maximus erat. </p>
           <p><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button>
-          <button class="w3-button w3-white w3-border" onclick="dislikeFunction(this)"><b><i class="fa fa-thumbs-down"></i> Dislike</b></button></p>
+          <button class="w3-button w3-white w3-border" onclick="dislikeFunction(this)"><b><i class="fa fa-thumbs-down"></i> Dislike</b></button>
+          <button class="w3-button w3-white w3-border" onclick="shareFunction(this)"><b><i class="fa fa-share-alt"></i> Share</b></button></p>
         </div>
       </div>
 
@@ -204,7 +205,8 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p><strong>The Beauty in Black & White</strong> I love black & white photography. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maxime. Fashion good so amet nisl, agittis lorem. Curabitur eget quam enim. </p>
           <p>More text about this blog entry. Fashion ipsum dolor sit amet, consectetur adipiscing elit. Sed non maximus erat. </p>
           <p><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button>
-          <button class="w3-button w3-white w3-border" onclick="dislikeFunction(this)"><b><i class="fa fa-thumbs-down"></i> Dislike</b></button></p>
+          <button class="w3-button w3-white w3-border" onclick="dislikeFunction(this)"><b><i class="fa fa-thumbs-down"></i> Dislike</b></button>
+          <button class="w3-button w3-white w3-border" onclick="shareFunction(this)"><b><i class="fa fa-share-alt"></i> Share</b></button></p>
         </div>
       </div>
 
@@ -339,6 +341,12 @@ function dislikeFunction(button) {
   // You can add your logic here to handle the "Dislike" action
   // For now, let's just change the button text to "Disliked"
   button.innerHTML = "<i class='fa fa-thumbs-down'></i> Disliked";
+  button.disabled = true; // Disable the button after disliking
+}
+function shareFunction(button) {
+  // You can add your logic here to handle the "Dislike" action
+  // For now, let's just change the button text to "Disliked"
+  button.innerHTML = "<i class='fa fa-share-alt'></i> Share";
   button.disabled = true; // Disable the button after disliking
 }
 </script>
