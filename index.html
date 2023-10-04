@@ -195,7 +195,10 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p>More text about this blog entry. Fashion ipsum dolor sit amet, consectetur adipiscing elit. Sed non maximus erat. </p>
           <p><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button>
           <button class="w3-button w3-white w3-border" onclick="dislikeFunction(this)"><b><i class="fa fa-thumbs-down"></i> Dislike</b></button>
-           <button class="w3-button w3-white w3-border" onclick=" commentFunction(this)"><b><i class="fa fa-comment"></i> Comment</b></button></p>
+
+          <button class="w3-button w3-white w3-border" onclick="shareFunction(this)"><b><i class="fa fa-share-alt"></i> Share</b></button></p>
+
+        
         </div>
       </div>
 
@@ -212,7 +215,9 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p>More text about this blog entry. Fashion ipsum dolor sit amet, consectetur adipiscing elit. Sed non maximus erat. </p>
           <p><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button>
           <button class="w3-button w3-white w3-border" onclick="dislikeFunction(this)"><b><i class="fa fa-thumbs-down"></i> Dislike</b></button>
-           <button class="w3-button w3-white w3-border" onclick=" commentFunction(this)"><b><i class="fa fa-comment"></i> Comment</b></button></p>
+
+          <button class="w3-button w3-white w3-border" onclick="shareFunction(this)"><b><i class="fa fa-share-alt"></i> Share</b></button></p>
+
         </div>
       </div>
 
@@ -349,10 +354,14 @@ function dislikeFunction(button) {
   button.innerHTML = "<i class='fa fa-thumbs-down'></i> Disliked";
   button.disabled = true; // Disable the button after disliking
 }
- function commentFunction(button) {
+
+function shareFunction(button) {
   // You can add your logic here to handle the "Dislike" action
   // For now, let's just change the button text to "Disliked"
-  button.innerHTML = "<i class='fa fa-comment'></i> Comment";
+  button.innerHTML = "<i class='fa fa-share-alt'></i> Share";
+
+
+
   button.disabled = true; // Disable the button after disliking
 }
 </script>
